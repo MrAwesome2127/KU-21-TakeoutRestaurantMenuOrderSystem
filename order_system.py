@@ -25,7 +25,7 @@ def place_order(menu):
     menu_items = get_menu_items_dict(menu)
 
     # Launch the store and present a greeting to the customer
-    print("Welcome to the Generic Take Out Restaurant.")
+    print('Welcome to the Generic Take Out Restaurant.')
 
     # TODO: Create a continuous while loop so customers can order multiple items
     while True:
@@ -68,7 +68,7 @@ def place_order(menu):
 
         # TODO: Ask the customer if they would like to order anything else
         # TODO: Let the customer know if they should type 'n' or 'N' to quit
-        another_order = input("Would you like to ordering? (N)o to quit: ")
+        another_order = input("Would you like to order? (N)o to quit: ")
 
         # TODO: Write a conditional statement that checks the user's input
         # TODO: The conditional statement should check for 'n' or 'N'
@@ -123,7 +123,7 @@ def update_order(order, menu_selection, menu_items):
 
             # TODO: Ask the customer for the quantity of the menu item
             # TODO: Use the item name variable in the question
-            quantity = input(f"How many '{item_name}' would you like to order?\n (This will default to '1' if you don't type a number): ")
+            quantity = input(f"What quantity of '{item_name}' would you like?\n (This will default to 1 if number is not entered): ")
 
             # TODO: Check if the quantity is a number, default to 1 if not
             if quantity.isdigit():
@@ -144,13 +144,13 @@ def update_order(order, menu_selection, menu_items):
         else:
         # TODO: When the user's input isn't valid, 
         # TODO: tell the customer that their input isn't valid
-            print(f"Sorry, {menu_selection} is not a valid menu selection.")
+            print(f"Sorry, {menu_selection} was not a menu option.")
     else:
 
     # TODO: When the menu selection wasn't valid:
     # TODO: Print the menu selection and 
     # TODO: Tell the customer they didn't select a menu option
-        print(f"Sorry, {menu_selection} is not a valid menu selection.")
+        print(f"Sorry, {menu_selection} was not a menu option.")
 
     # TODO: Return the updated order
     return order
